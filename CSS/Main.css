@@ -1,5 +1,214 @@
+/* ------------------------------------- FONTS ------------------------------------- */
+
+@font-face {
+    font-family: AbjectNewRoman;
+    src: url("../Assets/Fonts/abject-new-roman.ttf") format("truetype");
+}
+
+/* ------------------------------------- COLORS ------------------------------------- */
+
+:root {
+  --color-0: #0c0724;
+  --color-1: #272744;
+  --color-2: #494d7e;
+  --color-3: #8b6d9c;
+  --color-4: #c69fa5;
+  --color-5: #f2d3ab;
+  --color-6: #fbf5ef;
+}
+
+/* ------------------------------------- CONTAINERS ------------------------------------- */
+
 body {
+    background: var(--color-1);
+    text-align: center;
+    margin: 0px!important;
+}
+
+.container-header {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    background: #333333;
+    row-gap: 30px;
+    margin: 10px 80px 0px 80px;
+}
+
+#container-itch-project {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 30px 0px 30px 0px;
+}
+
+.itch-project {
+    width: 830px;
+    background: var(--color-0);
+    border-width: 0px 30px 0px 30px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-1) 0%, var(--color-1) 10%, var(--color-0) 10%, var(--color-0) 90%, var(--color-1) 90%)1;
+}
+
+.itch-project::before {
+    
+}
+
+.container-banner-gif {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.container-text-justified {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------- TEXTS ------------------------------------- */
+
+.text-main {
+    font-family: AbjectNewRoman;
+    background: -webkit-linear-gradient(var(--color-5) 58.8%, var(--color-4) 58.8%, var(--color-4) 76.5%, var(--color-3) 76.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-dark {
+    font-family: AbjectNewRoman;
+    background: -webkit-linear-gradient(var(--color-4) 58.8%, var(--color-3) 58.8%, var(--color-3) 76.5%, var(--color-2) 76.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-light {
+    font-family: AbjectNewRoman;
+    background: -webkit-linear-gradient(var(--color-6) 58.8%, var(--color-5) 58.8%, var(--color-5) 76.5%, var(--color-4) 76.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-size-main {
+    font-size: 40px;
+    filter: drop-shadow(0rem 4.1px var(--color-0));
+    line-height: 36.8px;
+}
+
+.text-size-header {
+    font-size: 100px;
+    filter: drop-shadow(0rem 10px var(--color-0));
+    line-height: 63px;
+}
+
+/* ------------------------------------- IMAGES ------------------------------------- */
+
+#img-header {
+    width: 220px;
+    image-rendering: pixelated;
+    margin-left: -40px;
+}
+
+#corner-top-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    image-rendering: pixelated;
+    height: 100px;
+    z-index: 1000;
+}
+
+#corner-top-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    image-rendering: pixelated;
+    height: 100px;
+    transform: scaleX(-1);
+    z-index: 1000;
+}
+
+#corner-bot-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    image-rendering: pixelated;
+    height: 145px;
+    z-index: 1000;
+}
+
+#corner-bot-right {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    image-rendering: pixelated;
+    height: 145px;
+    transform: scaleX(-1);
+    z-index: 1000;
+}
+
+#corner-top-mid {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    image-rendering: pixelated;
+    height: 40px;
+    transform: translate(-50%, 0%);
+    z-index: 1000;
+}
+
+#corner-bot-mid {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    image-rendering: pixelated;
+    height: 40px;
+    transform: scaleY(-1) translate(-50%, 0%);
+    z-index: 1000;
+}
+
+.banner-gif {
+    height: 167px;
+    image-rendering: pixelated;
+    border-width: 4px 4px 4px 0px;
+    border-style: solid;
+    border-color: var(--color-0);
+}
+
+.separator-horizontal
+{
+    height: 5px;
+    image-rendering: pixelated;
+}
+
+#header-deco-right {
+    height: 85px;
+    image-rendering: pixelated;
+    align-self: center;
+}
+
+#header-deco-left {
+    height: 85px;
+    image-rendering: pixelated;
+    align-self: center;
+    transform: scaleX(-1.0);
+}
+
+/* ------------------------------------- SROLLBAR ------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-0); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-1); 
+  border: 7px solid var(--color-0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-2);
 }
