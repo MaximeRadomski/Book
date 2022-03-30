@@ -190,13 +190,14 @@ body {
     height: 50px;
     image-rendering: pixelated;
     position: absolute;
-    transform: translate(420px, -150px) rotateZ(25deg);
+    transform: translate(380px, -10px) rotateZ(25deg); 
 }
 
 .separator-horizontal
 {
     height: 25px;
     image-rendering: pixelated;
+    max-width: 90%;
 }
 
 #header-deco-right {
