@@ -379,6 +379,8 @@ a.text-link:hover {
 img.pointer {
     height: 40px;
     image-rendering: pixelated;
+    margin-right: 3px;
+    transform: translateY(4px);
 }
 
 img.img-sample {
