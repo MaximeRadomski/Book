@@ -116,6 +116,21 @@ body {
     row-gap: 30px;
 }
 
+.photo-project {
+    width: 92%;
+    background: var(--color-0);
+    border-width: 0px 30px 0px 30px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-1) 0%, var(--color-1) 2.1%, var(--color-3) 2.1%, var(--color-3) 2.6%, var(--color-2) 2.6%, var(--color-2) 97.4%, var(--color-3) 97.4%, var(--color-3) 97.9%, var(--color-1) 97.9%)1;
+    outline: 20px solid var( --color-0);
+    outline-offset: -35px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    row-gap: 30px;
+}
+
 .songs-project {
     width: 94%;
     background: var(--color-0);
@@ -396,13 +411,17 @@ img.clickable:active {
     top: 50%;
     left: 50%;
     max-width: 100%;
-    max-height: initial;
-    width: 650px;
+    max-height: 100%;
+    width: auto;
     height: auto;
     transform: translate(-50%, -50%);
     z-index: 1000;
     filter: drop-shadow(0px 0px 106px black);
     opacity: 1;
+}
+
+img.img-kinkdom {
+    width: 530px;
 }
 
 
