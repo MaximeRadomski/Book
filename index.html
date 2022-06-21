@@ -463,7 +463,7 @@
 		<img class="separator-horizontal" src="Assets/Pictures/SeparatorHorizontal.png">
 
 		<div class="container-text-centered">
-			<span onclick="Cheers()" class="text-main text-size-main">Cheers!</span>
+			<span style="cursor: pointer; user-select: none;" onclick="Cheers()" class="text-main text-size-main">Cheers!</span>
 		</div>
 
 		<img style="margin-bottom: 70px; margin-top: -10px;" class="separator-horizontal" src="Assets/Pictures/SeparatorHorizontal.png">
@@ -471,11 +471,21 @@
 </html>
 
 <script>
+	var clickCount = 0;
+
 	function Cheers() {
 		var element = document.getElementById("Kinkdom");
 		if (element.style.display == "none")
-			element.style.display = "initial";
+		{
+			if (clickCount <= 3)
+				++clickCount;
+			else
+				element.style.display = "initial";
+		}
 		else
+		{
+			clickCount = 0;
 			element.style.display = "none";
+		}
 	}
 </script>
