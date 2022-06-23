@@ -280,6 +280,7 @@ a.text-link:hover {
     -o-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 #img-header {
